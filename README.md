@@ -29,7 +29,6 @@ Climate change is one of the most critical challenges of our time. This project 
     * `pandas` & `numpy`: Data manipulation.
     * `matplotlib` & `seaborn`: Data visualization.
     * `scikit-learn`: Machine learning models.
-    * `statsmodels` (if used): Time series analysis.
 
 ## 📂 Repository Structure
 
