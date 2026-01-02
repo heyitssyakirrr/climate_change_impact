@@ -1,38 +1,55 @@
-# 🌍 Climate Change Impact Analysis
+## CSC4600 Data Mining Project: Climate Change Impact on Agriculture
+## 📌 Project Overview
+This project applies data mining and machine learning techniques to analyze the impact of climate change on agriculture. Using the Climate Change Impact on Agriculture 2024 dataset, the project aims to predict effective Adaptation Strategies (e.g., Crop Rotation, Water Management) based on various environmental and agronomic factors.
 
-A Data Mining project that analyzes historical weather and climate data to investigate the long-term impact of global warming and climate change. 
+## 📂 Dataset
+The dataset used in this project is sourced from Kaggle: climate_change_impact_on_agriculture_2024.csv.
 
-This repository contains a comprehensive **Jupyter Notebook** that performs data cleaning, exploratory data analysis (EDA), and predictive modeling to visualize temperature trends and forecast future climate conditions.
+It contains 10,000 records with the following key features:
 
-## 📊 Project Overview
+Environmental: Average Temperature, Total Precipitation, CO2 Emissions, Extreme Weather Events.
 
-Climate change is one of the most critical challenges of our time. This project aims to leverage data mining techniques to:
-- Analyze historical temperature anomalies.
-- Identify correlations between time periods and rising temperatures.
-- Visualize the impact of climate change on specific regions (e.g., France, Ile-de-France).
-- Forecast future trends using statistical models.
+Agronomic: Crop Type, Crop Yield, Irrigation Access, Pesticide/Fertilizer Use, Soil Health Index.
 
-## 🚀 Key Features
+Location: Country, Region.
 
-* **Data Preprocessing**: Handling missing values, formatting dates, and cleaning noise from raw weather datasets.
-* **Exploratory Data Analysis (EDA)**: 
-    * Visualizing temperature changes over decades.
-    * Heatmaps and correlation matrices.
-    * Boxplots to detect outliers in weather patterns.
-* **Trend Analysis**: Breaking down seasonal vs. annual global warming trends.
+Target Variable: Adaptation_Strategies (Categorical: Water Management, Crop Rotation, No Adaptation, etc.)
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
+Python 3.10+
 
-* **Language**: Python 3.x
-* **Environment**: Jupyter Notebook / Google Colab
-* **Libraries**:
-    * `pandas` & `numpy`: Data manipulation.
-    * `matplotlib` & `seaborn`: Data visualization.
-    * `scikit-learn`: Machine learning models.
+Data Manipulation: Pandas, NumPy
 
-## 📂 Repository Structure
+Visualization: Matplotlib, Seaborn
 
-```bash
-climate_change_impact/
-├── Data_Mining_Project.ipynb  # Main analysis notebook
-└── README.md                  # Project documentation
+Machine Learning: Scikit-Learn
+
+Deep Learning: TensorFlow / Keras
+
+## ⚙️ Project Workflow
+Data Loading: Imported the raw CSV dataset.
+
+Exploratory Data Analysis (EDA):
+
+Checked for null values (dataset is clean).
+
+Analyzed distributions of regions, countries, and crop types.
+
+Visualized relationships between environmental factors and agriculture.
+
+Data Preprocessing:
+
+One-Hot Encoding: Applied to categorical features (Country, Region, Crop_Type).
+
+Label Encoding: Applied to the target variable (Adaptation_Strategies).
+
+Modeling:
+
+Implemented a Deep Learning model using TensorFlow/Keras.
+
+Used standard classification metrics (Accuracy, Precision, Recall, F1-Score) to evaluate performance.
+
+## 📊 Results
+The model was trained to classify the best adaptation strategy for a given set of conditions.
+
+Current Performance: The initial model achieved an accuracy of approximately 19.6%. (Note: Further hyperparameter tuning and feature engineering are recommended to improve predictive performance).
