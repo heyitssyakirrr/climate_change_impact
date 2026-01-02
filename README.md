@@ -37,5 +37,4 @@ Climate change is one of the most critical challenges of our time. This project 
 ```bash
 climate_change_impact/
 ├── Data_Mining_Project.ipynb  # Main analysis notebook
-├── README.md                  # Project documentation
-└── (Add your dataset file here, e.g., GlobalTemperatures.csv)
+└── README.md                  # Project documentation
