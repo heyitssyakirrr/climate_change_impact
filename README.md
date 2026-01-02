@@ -20,7 +20,6 @@ Climate change is one of the most critical challenges of our time. This project 
     * Heatmaps and correlation matrices.
     * Boxplots to detect outliers in weather patterns.
 * **Trend Analysis**: Breaking down seasonal vs. annual global warming trends.
-* **Predictive Modeling**: (Optional: Mention if you used Linear Regression, ARIMA, or Random Forest here) to predict future temperatures.
 
 ## 🛠️ Tech Stack
 
